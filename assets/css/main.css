@@ -117,6 +117,7 @@ header {
 
 	.left li {
 		background-color: #494949;
+		margin-left: 30px;
 	}
 
 /********************** FOOTER STYLES **********************/
@@ -128,7 +129,7 @@ footer {
 
 .footer-content {
 	text-align: center;
-	padding-top: 70px;
+	padding: 70px 0px;
 }
 
 .footer-content p {
@@ -136,25 +137,9 @@ footer {
 }
 
 .social-icons i {
-		margin-left: 60px;
+		margin: auto 30px;
 		font-size: 34px;
 	}
-
-@media (max-width: 800px) {
-  .footer-content .left {
-    float: none;
-    margin-top: 10px;
-  }
-
-    .footer-content .right {
-    float: none;
-    margin-top: 10px;
-  }
-
-  .social-icons {
-  	margin-bottom: 0px;
-  }
-}
 
 /********************** HOME STYLES **********************/
 .homepage-main {
@@ -235,14 +220,37 @@ footer {
 	}
 
 	.about-me-text {
-		margin: 0px.
+		margin: 0px;
 	}
 
 	.left li {
-		display: none;
+		display: none; 
+	}
+
+	.right li {
+		width: 120px;
 	}
 
 	.wrapper {
-		margin: auto 0px;
+		margin: 15px 30px;
+	}
+
+	.footer-content .left {
+    	float: none;
+    	margin-top: 10px;
+  	}
+
+    .footer-content .right {
+    	float: none;
+    	margin-top: 10px;
+  	}
+
+  	.social-icons {
+  		margin-bottom: 0px;
+  	}
+
+  	.social-icons i {
+		margin: auto 15px;
+		font-size: 30px;
 	}
 }	
