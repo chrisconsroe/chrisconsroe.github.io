@@ -216,7 +216,7 @@ footer {
 
 @media (max-width: 700px) {
 	.homepage-main h1 {
-		font-size: 5em;
+		font-size: 4em;
 	}
 
 	.about-me-text {
@@ -232,7 +232,7 @@ footer {
 	}
 
 	.wrapper {
-		margin: 15px 30px;
+		margin: 0px 30px;
 	}
 
 	.footer-content .left {
