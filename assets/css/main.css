@@ -1,0 +1,248 @@
+@font-face {
+font-family: "proxima-nova";
+src:url("../fonts/Proxima Nova Reg.otf") format("opentype");
+font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family: "proxima-nova";
+src:url("../fonts/Proxima Nova Sbold.otf") format("opentype");
+font-style:normal;font-weight:600;
+}
+
+@font-face {
+font-family: "merriweather";
+src:url("../fonts/Merriweather-Light.otf") format("opentype");
+}
+
+/********************** Main Styles **********************/
+html, body {
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+
+li {
+	font-size: 14px;
+	font-family: proxima-nova;
+}
+
+p {
+	font-family: Merriweather-light;
+	font-size: 16px;
+    line-height: 30px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: proxima-nova;
+}
+
+ol, ul {
+	list-style: none;
+	padding: 0px;
+}
+
+a {
+	color: #000000;
+	font-weight: 900;
+	-moz-transition: all 0.1s ease;
+	-webkit-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+a:hover, a:active, a:focus {
+	color: #354B59;
+	text-decoration: none;
+	font-weight: 900;
+	color: #BFBFBF;
+}
+
+.banner-top {
+	width: 100%;
+}
+
+	.banner-top img {
+		width: 100%;
+	}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: auto 60px;
+}
+
+/********************** TOP NAV STYLES **********************/
+header {
+	background-color: #777777;
+	width: 100%;
+	min-height: 78px;
+}
+
+	.header-nav li {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #E8E8E8;
+		letter-spacing: 5px;
+		width: 160px;
+		text-align: center;
+		margin: 0 -2px -20px -2px;
+		padding: 29px 0px;
+	}
+
+	.header-nav li:hover {
+		text-decoration: none;
+		color: #FFFFFF;
+		font-weight: 800;	
+		-moz-transition: all 0.1s ease;
+		-webkit-transition: all 0.1s ease;
+		-o-transition: all 0.1s ease;
+		-ms-transition: all 0.1s ease;
+		transition: all 0.1s ease;
+		background-color: #494949;
+		padding: 29px 0px;		
+	}
+
+	.active {
+		font-weight: 800;				
+	}
+
+	.left li {
+		background-color: #494949;
+	}
+
+/********************** FOOTER STYLES **********************/
+footer {
+	background-color: #E8E8E8;
+	width: 100%;
+	min-height: 160px;
+}
+
+.footer-content {
+	text-align: center;
+	padding-top: 70px;
+}
+
+.footer-content p {
+	margin-bottom: 0px;
+}
+
+.social-icons i {
+		margin-left: 60px;
+		font-size: 34px;
+	}
+
+@media (max-width: 800px) {
+  .footer-content .left {
+    float: none;
+    margin-top: 10px;
+  }
+
+    .footer-content .right {
+    float: none;
+    margin-top: 10px;
+  }
+
+  .social-icons {
+  	margin-bottom: 0px;
+  }
+}
+
+/********************** HOME STYLES **********************/
+.homepage-main {
+	text-align: center;
+	color: #FFFFFF;
+	background: url("../img/background-full3.jpg");
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.homepage-main h1 {
+	font-family: proxima-nova;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 90px;
+}
+
+.homepage-main p {
+	font-size: 16px;
+	font-family: proxima-nova;
+	color: #E8E8E8;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+.homepage-main a {
+	color: #E8E8E8;
+	font-weight: 900;
+}
+
+.homepage-main a:hover {
+	color: #777777;
+}
+
+.homepage-main div {
+	margin: 200px 0px; 
+}
+
+.button {
+	display: inline-block;
+	min-width: 200px;
+	font-size: 12px;
+	margin: 0px auto;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: #494949;
+	padding: 15px 40px;
+	margin: 20px 14px 0px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+
+	.button:hover {
+		background-color: #777777;
+		color: #FFFFFF;
+	}
+/********************** ABOUT STYLES **********************/
+.about-me-text {
+	margin: 90px;
+	max-width: 800px;
+}
+
+	.about-me-text h1 {
+		font-size: 90px;
+		margin-bottom: 30px;
+	}
+
+	.about-me-text p {
+		margin-bottom: 24px;
+	}
+
+@media (max-width: 700px) {
+	.homepage-main h1 {
+		font-size: 5em;
+	}
+
+	.about-me-text {
+		margin: 0px.
+	}
+
+	.left li {
+		display: none;
+	}
+
+	.wrapper {
+		margin: auto 0px;
+	}
+}	
