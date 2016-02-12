@@ -1,21 +1,4 @@
-@font-face {
-font-family: "proxima-nova";
-src:url("../fonts/Proxima Nova Reg.otf") format("opentype");
-font-style:normal;font-weight:400;
-}
-
-@font-face {
-font-family: "proxima-nova";
-src:url("../fonts/Proxima Nova Sbold.otf") format("opentype");
-font-style:normal;font-weight:600;
-}
-
-@font-face {
-font-family: "merriweather";
-src:url("../fonts/Merriweather-Light.otf") format("opentype");
-}
-
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Merriweather:300,400);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300|Source+Sans+Pro:400,300,600);
 
 /********************** Main Styles **********************/
 html, body {
@@ -25,17 +8,18 @@ html, body {
 
 li {
 	font-size: 14px;
-	font-family: proxima-nova;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 p {
-	font-family: Merriweather-light;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
 	font-size: 16px;
     line-height: 30px;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: proxima-nova;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 ol, ul {
@@ -156,7 +140,6 @@ footer {
 }
 
 .homepage-main h1 {
-	font-family: proxima-nova;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 90px;
@@ -164,7 +147,7 @@ footer {
 
 .homepage-main p {
 	font-size: 16px;
-	font-family: proxima-nova;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: #E8E8E8;
 	letter-spacing: 1px;
 	font-weight: 100;
