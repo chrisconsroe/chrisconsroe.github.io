@@ -88,7 +88,7 @@ strong {
 	opacity: 1;
 }
 
-#chartbeat-support-site-card {
+#cb-support-site-card {
 	background-image: url("../img/support-site-card-image.png"); 	
 }
 
@@ -96,8 +96,8 @@ strong {
 	background-image: url("../img/salt-and-churn-card-image.png");
 }
 
-#chartbeat-illustrations-card {
-	background-image: url("../img/chartbeat-illustrations-card-image.png");
+#cb-illustrations-card {
+	background-image: url("../img/cb-illustrations-card-image.png");
 }
 
 .content-main {
@@ -116,7 +116,7 @@ strong {
 	min-height: 250px;
 }
 
-	#chartbeat-support-site {
+	#cb-support-site {
 		background: no-repeat center url("../img/support-site-banner-image.png");
 		background-attachment: fixed;
 		-webkit-background-size: cover;
@@ -134,8 +134,8 @@ strong {
   		background-size: cover;
 	}
 
-	#chartbeat-illustrations {
-		background: no-repeat center url("../img/chartbeat-illustrations-banner-image.png");
+	#cb-illustrations {
+		background: no-repeat center url("../img/cb-illustrations-banner-image.png");
 		background-attachment: fixed;
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
