@@ -12,9 +12,9 @@ li {
 }
 
 p {
-	font-family: 'Merriweather', serif;
-	font-weight: 300;
-	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
     line-height: 30px;
 }
 
@@ -38,7 +38,6 @@ a {
 }
 
 a:hover, a:active, a:focus {
-	color: #354B59;
 	text-decoration: none;
 	font-weight: 900;
 	color: #BFBFBF;
@@ -66,9 +65,8 @@ a:hover, a:active, a:focus {
 
 /********************** TOP NAV STYLES **********************/
 header {
-	background-color: #777777;
 	width: 100%;
-	min-height: 78px;
+
 }
 
 	.header-nav li {
@@ -77,33 +75,50 @@ header {
 		font-size: 14px;
 		color: #E8E8E8;
 		letter-spacing: 5px;
-		width: 160px;
+		min-width: 160px;
 		text-align: center;
-		margin: 0 -2px -20px -2px;
-		padding: 29px 0px;
+		padding: 20px 0px;
 	}
 
 	.header-nav li:hover {
 		text-decoration: none;
 		color: #FFFFFF;
-		font-weight: 800;	
+		font-weight: 800;
 		-moz-transition: all 0.1s ease;
 		-webkit-transition: all 0.1s ease;
 		-o-transition: all 0.1s ease;
 		-ms-transition: all 0.1s ease;
 		transition: all 0.1s ease;
-		background-color: #494949;
-		padding: 29px 0px;		
 	}
 
 	.active {
-		font-weight: 800;				
+		font-weight: 800;
 	}
 
-	.left li {
-		background-color: #494949;
-		margin-left: 30px;
+	.header-nav-dark li {
+		color: #E8E8E8;
 	}
+
+	.header-nav-dark li:hover {
+		text-decoration: none;
+		color: #FFFFFF;
+		font-weight: 800;
+		-moz-transition: all 0.1s ease;
+		-webkit-transition: all 0.1s ease;
+		-o-transition: all 0.1s ease;
+		-ms-transition: all 0.1s ease;
+		transition: all 0.1s ease;
+		/*padding: 19px 0px;*/
+		/*border-bottom: solid 1px #333333;*/
+	}
+
+.header-nav-dark {
+	padding: 0 60px;
+	background-color: #494949;
+    height: 60px;
+    /*position: fixed;*/
+    width: 100%;
+}
 
 /********************** FOOTER STYLES **********************/
 footer {
@@ -123,7 +138,7 @@ footer {
 
 .social-icons i {
 		margin: auto 30px;
-		font-size: 34px;
+		font-size: 28px;
 	}
 
 /********************** HOME STYLES **********************/
@@ -132,6 +147,7 @@ footer {
 	color: #FFFFFF;
 	background: url("../img/background-full.svg");
 	background-attachment: fixed;
+	max-height: 680px;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
   	-o-background-size: cover;
@@ -150,6 +166,7 @@ footer {
 	color: #E8E8E8;
 	letter-spacing: 1px;
 	font-weight: 100;
+	margin: 50px 0;
 }
 
 .homepage-main a {
@@ -162,7 +179,7 @@ footer {
 }
 
 .homepage-main div {
-	margin: 200px 0px; 
+	margin: 200px 0px;
 }
 
 .button {
@@ -184,18 +201,23 @@ footer {
 		color: #FFFFFF;
 	}
 /********************** ABOUT STYLES **********************/
-.about-me-text {
-	margin: 90px;
-	max-width: 800px;
+.about-me-container {
+	margin: 100px 60px;
+	max-width: 1280px;
 }
 
-	.about-me-text h1 {
+	.about-me-container h1 {
 		font-size: 90px;
-		margin-bottom: 30px;
+		margin: 0 0 50px 0;
 	}
 
-	.about-me-text p {
+	.about-me-container p {
 		margin-bottom: 24px;
+	}
+
+	.about-me-container img {
+		width: 100%;
+		padding: 40px 0;
 	}
 
 @media (max-width: 700px) {
@@ -203,12 +225,16 @@ footer {
 		font-size: 4em;
 	}
 
-	.about-me-text {
+	.about-me-container {
 		margin: 0px;
 	}
 
+	.about-me-container img {
+		display: none;
+	}
+
 	.left li {
-		display: none; 
+		display: none;
 	}
 
 	.right li {
@@ -237,4 +263,4 @@ footer {
 		margin: auto 15px;
 		font-size: 30px;
 	}
-}	
+}

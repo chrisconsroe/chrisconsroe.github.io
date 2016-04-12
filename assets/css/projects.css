@@ -25,6 +25,12 @@ strong {
 }
 
 /********************** INDEX PAGE STYLES **********************/
+.project-card-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 .project-button h3 {
 	text-align: center;
 	color: #FFFFFF;
@@ -52,8 +58,8 @@ strong {
 
 .overlay {
 	background-color: rgba(0, 0, 0, .75);
-	height: 200px;
-	width: 100%;
+	width: 530px;
+	height: 375px;
 	padding: 20px;
 	visibility: hidden;
 	opacity: 0;
@@ -65,8 +71,9 @@ strong {
 }
 
 .project-card {
-	height: 200px;
-	margin: 50px auto;
+	width: 530px;
+	height: 375px;
+	margin: 15px 0;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
   	-o-background-size: cover;
@@ -113,7 +120,7 @@ strong {
 /********************** INDIVIDUAL PAGE STYLES **********************/
 .top-banner {
 	width: 100%;
-	min-height: 250px;
+	min-height: 320px;
 }
 
 	#cb-support-site {
@@ -123,6 +130,8 @@ strong {
     	-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;
+  		background-position: 0px 0px;
+   		background-size: contain;
 	}
 
 	#salt-and-churn {
@@ -131,7 +140,8 @@ strong {
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
   		-o-background-size: cover;
-  		background-size: cover;
+		background-position: 0px 0px;
+   		background-size: contain;
 	}
 
 	#cb-illustrations {
@@ -140,7 +150,8 @@ strong {
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
   		-o-background-size: cover;
-  		background-size: cover;
+  		background-position: 0px 0px;
+   		background-size: contain;
 	}
 
 .project-header {
