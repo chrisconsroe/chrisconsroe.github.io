@@ -13,7 +13,7 @@ a:hover {
 }
 
 .content-main .row {
-	margin: auto 25px;
+	margin: auto 5%;
 }
 
 .wrapper {
@@ -25,13 +25,7 @@ strong {
 }
 
 /********************** INDEX PAGE STYLES **********************/
-.project-card-container {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.project-button h3 {
+.project-button h2 {
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -58,26 +52,26 @@ strong {
 
 .overlay {
 	background-color: rgba(0, 0, 0, .75);
-	width: 530px;
+	/*width: 530px;*/
 	height: 375px;
-	padding: 20px;
-	visibility: hidden;
+	padding: 80px;
+	/*visibility: hidden;*/
 	opacity: 0;
    	-moz-transition: opacity 0.2s ease;
 	-webkit-transition: opacity 0.2s ease;
 	-o-transition: opacity 0.2s ease;
 	-ms-transition: opacity 0.2s ease;
-	transition: opacity 0.2s ease;	 
+	transition: opacity 0.2s ease;
 }
 
 .project-card {
-	width: 530px;
+	/*width: 530px;*/
 	height: 375px;
-	margin: 15px 0;
+	margin: 15px 0px;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
   	-o-background-size: cover;
-  	background-size: cover;	  	
+  	background-size: cover;
    	-moz-transition: opacity 0.2s ease;
 	-webkit-transition: opacity 0.2s ease;
 	-o-transition: opacity 0.2s ease;
@@ -96,7 +90,7 @@ strong {
 }
 
 #cb-support-site-card {
-	background-image: url("../img/support-site-card-image.png"); 	
+	background-image: url("../img/support-site-card-image.png");
 }
 
 #salt-and-churn-card {
