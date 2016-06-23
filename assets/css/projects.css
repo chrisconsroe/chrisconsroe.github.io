@@ -12,10 +12,6 @@ a:hover {
 	color: #BFBFBF;
 }
 
-.content-main .row {
-	margin: auto 5%;
-}
-
 .wrapper {
 	margin: auto 60px;
 }
@@ -25,6 +21,31 @@ strong {
 }
 
 /********************** INDEX PAGE STYLES **********************/
+.project-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-card {
+	margin: 15px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.overlay {
+	background-color: rgb(0, 0, 0);
+	opacity: 0;
+}
+
+.project-button {
+	visibility: hidden;
+	padding: 8% 20%;
+	max-width: 350px;
+}
+
 .project-button h2 {
 	text-align: center;
 	color: #FFFFFF;
@@ -33,7 +54,7 @@ strong {
 .project-button p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15px;
-	padding: 8px 0px;
+	padding: 10px 0px;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 5px;
@@ -45,38 +66,10 @@ strong {
 	max-width: 200px;
 }
 
-.project-button {
-	visibility: hidden;
-	opacity: 0;
-}
-
-.overlay {
-	background-color: rgba(0, 0, 0, .75);
-	/*width: 530px;*/
-	height: 375px;
-	padding: 80px;
-	/*visibility: hidden;*/
-	opacity: 0;
-   	-moz-transition: opacity 0.2s ease;
-	-webkit-transition: opacity 0.2s ease;
-	-o-transition: opacity 0.2s ease;
-	-ms-transition: opacity 0.2s ease;
-	transition: opacity 0.2s ease;
-}
-
-.project-card {
-	/*width: 530px;*/
-	height: 375px;
-	margin: 15px 0px;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-   	-moz-transition: opacity 0.2s ease;
-	-webkit-transition: opacity 0.2s ease;
-	-o-transition: opacity 0.2s ease;
-	-ms-transition: opacity 0.2s ease;
-	transition: opacity 0.2s ease;
+.project-button p:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+	font-weight: 700;
 }
 
 .project-card:hover .project-button {
@@ -85,8 +78,12 @@ strong {
 }
 
 .project-card:hover .overlay {
-	visibility: visible;
-	opacity: 1;
+	opacity: .75;
+	transition: all ease .2s;
+}
+
+#charley-site-card {
+	background-image: url("../img/charley-site-card-image.png");
 }
 
 #cb-support-site-card {
@@ -101,8 +98,13 @@ strong {
 	background-image: url("../img/cb-illustrations-card-image.png");
 }
 
+#pokedex-card {
+	background-image: url("../img/pokedex-card-image.png");
+}
+
 .content-main {
-	margin: 12% auto;
+	margin: 16% auto;
+	max-width: 1276px;
 }
 
 .content-main h1 {
@@ -119,33 +121,43 @@ strong {
 
 	#cb-support-site {
 		background: no-repeat center url("../img/support-site-banner-image.png");
-		background-attachment: fixed;
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;
   		background-position: 0px 0px;
-   		background-size: contain;
 	}
 
 	#salt-and-churn {
 		background: no-repeat center url("../img/salt-and-churn-banner-image.png");
-		background-attachment: fixed;
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
   		-o-background-size: cover;
 		background-position: 0px 0px;
-   		background-size: contain;
 	}
 
 	#cb-illustrations {
 		background: no-repeat center url("../img/cb-illustrations-banner-image.png");
-		background-attachment: fixed;
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
   		-o-background-size: cover;
   		background-position: 0px 0px;
-   		background-size: contain;
+	}
+
+	#charley-site {
+		background: no-repeat center url("../img/charley-site-banner-image.png");
+		-webkit-background-size: cover;
+    	-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-position: 0px 0px;
+	}
+
+	#project-pokedex {
+		background: no-repeat center url("../img/pokedex-banner-image.png");
+		-webkit-background-size: cover;
+    	-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-position: 0px 0px;
 	}
 
 .project-header {
@@ -153,43 +165,63 @@ strong {
 }
 
 .project-content {
-	margin-top: 75px; 
-	margin-bottom: 100px;
+	margin: 50px auto;
+    max-width: 900px;
 }
 
-	.project-content h1 {
-		text-transform: uppercase;
-		font-weight: 800;
-		letter-spacing: 4px;
-		font-size: 48px;
-	}
+.project-content h1 {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 4px;
+	font-size: 48px;
+}
 
-	.project-content h2 {
-		font-size: 18px;
-		margin: 5px auto;
-		font-weight: 400;
+.project-content h2 {
+	font-size: 18px;
+	margin: 5px auto;
+	font-weight: 400;
+}
 
-	}
+.project-content p {
+	margin: 30px 0;
+	font-size: 16px;
+	line-height: 1.9;
+	font-weight: 400;
+}
 
-	.project-content p {
-		margin: 30px 0;
-    	max-width: 800px; 
-    	font-size: 16px;
-	}
+.project-content .image-caption {
+	color: #777777;
+	font-style: italic;
+	margin-top: 10px;
+	max-width: 800px;
+}
 
-	.project-content .image-caption {
-		color: #777777;
-		font-style: italic;
-		margin-top: 10px;
-		max-width: 800px; 
-	}
+.project-content img {
+		box-shadow: 1px 1px 3px #EAEAEA;
+		margin: 10px auto;
+		max-width: 66%;
+}
 
-	.project-content img {
-		max-width: 800px;
- 		box-shadow: 1px 1px 3px #EAEAEA;
- 		margin: auto;
- 		width: 100%;
-	}	
+.project-cta-button {
+	width: 100%;
+	background-color: #383838;
+	color: #FFFFFF;
+	border: none;
+	padding: 15px 0;
+	margin: 30px auto;
+}
+
+.project-cta-button p {
+	margin: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.project-cta-button:hover {
+	opacity: .5;
+	transition: all ease .2s;
+}
 
 .prev {
 	margin: 30px auto;
@@ -199,16 +231,24 @@ strong {
 	letter-spacing: 3px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+	.project-content {
+    	padding: 0px 10px;
+	}
+
 	.project-content h1 {
 		font-size: 36px;
 	}
 
+	.project-content img {
+		max-width: 100%;
+	}
+
 	.top-banner {
-		min-height: 150px;	
+		min-height: 150px;
 	}
 
 	.wrapper {
-		margin: 0px 30px;
+		margin-top: 120px auto 0px;
 	}
 }

@@ -1,10 +1,13 @@
-// smooth scroll function
-
-var $root = $('html, body');
-	$('.smoothScroll').click(function() {
-	    var href = $.attr(this, 'href');
-	    $root.animate({
-	        scrollTop: $(href).offset().top - 50
-	    }, 500);
-	    return false;
+$(document).ready(function() {
+	$('.nav-bar-icon').click(function() {
+		$('.nav-bar-menu').toggleClass('hidden');
 	});
+
+
+	$(window).resize(function() {
+		var width = $(window).width();
+		if (width > 900) {
+			$('.nav-bar-menu').addClass('hidden');
+		}
+	});
+});

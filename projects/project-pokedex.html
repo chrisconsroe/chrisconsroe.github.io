@@ -1,0 +1,60 @@
+---
+layout: project
+title: Projects - Project Pokedex
+active: projects
+---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/projects.css">
+
+<div class="top-banner" id="project-pokedex"></div>
+
+<div class="project-content wrapper">
+
+	<div class="prev">
+        <a href="../projects/index.html"><i class="fa fa-long-arrow-left"></i> All Projects</a>
+    </div>
+
+	<div class="project-header">
+		<h1>Project Pokedex</h1>
+
+		<h2><strong>tldr;</strong> REST API web app for .</h2>
+		<h2><strong>tools:</strong> Asynchronous JSON, REST API, HTML&CSS, JavaScript, JQuery</h2>
+	</div>
+
+	<p>Our final project in New York Code + Design Academy's Front-End 101 bootcamp was to use some kind of open-source API to make something. Very open-ended. I wanted to do something that was fun and nerdy, but that I could also continue to build off of in the future.</p>
+
+	<p>Thank goodness I found an enormous <a href="pokeapi.co" target="_blank">Pokemon API</a>.</p>
+
+	<p>The API is so thorough and detailed you could spend hours just pouring through information, so I wanted to make sure my project was narrow enough in scope that I could actually accomplish it in time. I decided on a few key features: given an input ID, dynamically generate a card image for that pokemon and when you click it, show it's entire evolution family.</p>
+
+	<p>The markup was easy &mdash; I don't know that I'll ever get sick of flexbox. I love it so much.</p>
+
+	<p>Then I hit my first wall. I was so used to building static websites and only using Javascript for DOM manipulations that I didn't really know where to start mapping which endpoints I would hit and when.</p>
+
+	<p>I'm lucky enough to work alongside talented developers who are also generous with their time, and one of them showed how he likes to think through architecture before even starting to code.</p>
+
+	<img src="{{ site.baseurl }}/assets/img/pokedex-1.png">
+	<p class="image-caption">I always thought the whole drawing lots of pictures thing was kind of an exaggeration...turns out it's incredibly helpful.</p>
+
+	<p>That was the end of the help &mdash; my friend then told me to do the rest myself (no matter how bad) and then he'd go over everything with me and talk about how to make it better. He assured me that debugging my own code is the most necessary skill and the best teacher.</p>
+
+	<p>So I set to work.</p>
+
+	<p>I think the hardest thing to wrap my mind around was the very concept of asynchronous data; suddenly I had to wait for response to come back. I read about callbacks and promises. I had to think about scope constantly. I spent hours in the console tracing the compilers' process trying to see why it wasn't working.</p>
+
+	<img src="{{ site.baseurl }}/assets/img/pokedex-2.png">
+	<p class="image-caption">Finally I got it basically working. Sidenote: look how many Eevee evolutions there are now.</p>
+
+	<p>Even though I was so pleased to reach a basic level of functionality I knew there were glaring problems. The evolution cards take the longest to come back so if you click on the first pokemon before. I made a half-baked attempt at recursion that worked, but wasn't done well. The evolutions aren't always in the right order.</p>
+
+	<p>I presented it in class. People liked it. At least I think they did. Pokemon is still cool, right?</p>
+
+	<p>My favorite thing about this project though is how continuable it is. What about displaying evolution triggers or levels? Maybe if you click on a pokemon card it flips over and shows its stats and moveset. Maybe I should try and build it all over again in React (I actually think I'll do that. Seems like it's all about React these days, doesn't it?).</p>
+
+	<a href="http://chrisconsroe.github.io/project-pokedex" target="_blank">
+		<button class="project-cta-button"><p>Check it out Live!</p></button>
+	</a>
+
+	<div class="prev">
+        <a href="../projects/project-pokedex.html#top" class="smoothScroll"><i class="fa fa-long-arrow-up"></i> Back to Top</a>
+    </div>
+</div>
