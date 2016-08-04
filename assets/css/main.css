@@ -233,8 +233,13 @@ footer {
 
 	.about-me-container img {
 		width: 100%;
-		padding: 40px 0;
+		padding: 0px 30px;
 	}
+
+.about-me-flex {
+	display: flex;
+	padding-bottom: 20px;
+}
 
 @media (max-width: 900px) {
 	.header-nav {
@@ -258,8 +263,15 @@ footer {
 		font-size: 62px;
 	}
 
-	.about-me-container img {
-		display: none;
+	.about-me-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.about-me-picture {
+		width: 370px;
+		margin: auto;
 	}
 
 	.full-width-header-link {
