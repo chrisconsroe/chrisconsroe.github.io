@@ -102,6 +102,10 @@ strong {
 	background-image: url("../img/pokedex-card-image.png");
 }
 
+#viacitrus-card {
+	background-image: url("../img/viacitrus-card-image.png");
+}
+
 .content-main {
 	margin: 16% auto;
 	max-width: 1276px;
