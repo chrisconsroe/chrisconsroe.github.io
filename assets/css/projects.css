@@ -106,6 +106,10 @@ strong {
 	background-image: url("../img/viacitrus-card-image.png");
 }
 
+#inventory-app-card {
+	background-image: url("../img/inventory-app-card-image.png");
+}
+
 .content-main {
 	margin: 16% auto;
 	max-width: 1276px;
