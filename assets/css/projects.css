@@ -174,7 +174,7 @@ strong {
 
 .project-content {
 	margin: 50px auto;
-    max-width: 900px;
+    max-width: 780px;
 }
 
 .project-content h1 {
@@ -207,7 +207,7 @@ strong {
 .project-content img {
 		box-shadow: 1px 1px 3px #EAEAEA;
 		margin: 10px auto;
-		max-width: 66%;
+		max-width: 780px;
 }
 
 .project-cta-button {
