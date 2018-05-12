@@ -20,6 +20,30 @@ strong {
 	font-weight: 800;
 }
 
+/********************** STYLES **********************/
+.portfolio-card-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 50px auto;
+    max-width: 780px;
+}
+
+.portfolio-card {
+	border: 2px solid #333;
+	display: flex;
+	justify-content: center;
+	margin: 15px 0;
+	padding: 15px 0;
+}
+
+.portfolio-card h2 {
+	margin: 15px 0;
+}
+
+.portfolio-card:hover {
+	border: 2px solid #BFBFBF;
+}
 /********************** INDEX PAGE STYLES **********************/
 .project-card-container {
 	display: flex;
@@ -33,6 +57,8 @@ strong {
     -moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+	width: 350px;
+	height: 224px;
 }
 
 .overlay {
@@ -54,7 +80,6 @@ strong {
 .project-button p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15px;
-	padding: 10px 0px;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 5px;
@@ -90,6 +115,10 @@ strong {
 	background-image: url("../img/support-site-card-image.png");
 }
 
+#cb-company-card {
+	background-image: url("../img/cb-company-card.png");
+}
+
 #salt-and-churn-card {
 	background-image: url("../img/salt-and-churn-card-image.png");
 }
@@ -111,7 +140,7 @@ strong {
 }
 
 .content-main {
-	margin: 16% auto;
+	margin: 10% auto;
 	max-width: 1276px;
 }
 
@@ -121,14 +150,27 @@ strong {
 	margin-bottom: 40px;
 }
 
+.content-main .prev {
+	text-align: center;
+}
+
 /********************** INDIVIDUAL PAGE STYLES **********************/
 .top-banner {
 	width: 100%;
-	min-height: 320px;
+	min-height: 200px;
 }
 
 	#cb-support-site {
 		background: no-repeat center url("../img/support-site-banner-image.png");
+		-webkit-background-size: cover;
+    	-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		background-position: 0px 0px;
+	}
+
+	#cb-company {
+		background: no-repeat center url("../img/cb-company-banner-image.png");
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
   		-o-background-size: cover;
@@ -168,6 +210,14 @@ strong {
   		background-position: 0px 0px;
 	}
 
+	#viacitrus {
+		background: no-repeat center url("../img/viacitrus-banner-image.png");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: 0px 0px;
+	}
+
 .project-header {
 	margin-bottom: 50px;
 }
@@ -190,12 +240,29 @@ strong {
 	font-weight: 400;
 }
 
+.project-content h3 {
+	font-size: 24px;
+	margin-top: 70px;
+	font-weight: bold;
+}
+
 .project-content p {
 	margin: 30px 0;
-	font-size: 16px;
-	line-height: 1.9;
+	font-size: 21px;
+	line-height: 1.7;
 	font-weight: 400;
 }
+
+.project-content ul {
+	list-style: circle;
+}
+
+.project-content ul li {
+	max-width: 600px;
+	margin: 0 0 10px 50px;
+	font-size: 16px;
+}
+
 
 .project-content .image-caption {
 	color: #777777;
